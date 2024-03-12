@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width = device-width, user-scalable=yes">
+        <link rel="stylesheet" href="weatherStyle.css">
+        <title>Weather today</title>
+    </head>
+    <body>
+        <form class="form-css" action="">
+            <input class="input-js" type="text" placeholder="Search city...">
+            <ul></ul>
+        </form>
+
+        <div id="weather" style="display: none;">
+            <img src="" alt="" id="icon">
+            <div id="description">cool</div>
+            <h1 id="degrees">20&#8451;</h1>
+            <h2 id="city">Hanoi</h2>
+            <button id="change">change city</button>
+            <div class="info">
+                <div>
+                    <h3>Wind</h3>
+                    <div id="wind-js" class="value">2<span>km/h</span></div>
+                </div>
+                <div>
+                    <h3>Feels like</h3>
+                    <div id ="feels-like-js" class="value">2<span>km/h</span></div>
+                </div>
+                <div>
+                    <h3>Humidity</h3>
+                    <div id="humidity-js" class="value">2<span>km/h</span></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
+        <script src="weather.js"></script>
+    </body>
+</html>
